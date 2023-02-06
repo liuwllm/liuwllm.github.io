@@ -3,6 +3,7 @@ import {BsFillMoonStarsFill} from "react-icons/bs";
 import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/legacy/image";
 import profile from "../../public/profile.png"
+import logo from "../../public/logo.png"
 
 export default function Home() {
   return (
@@ -13,13 +14,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-slate-200 px-10">
+      <main className="bg-slate-175 px-10">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-sans">Title</h1>
-            <ul className="flex items-center">
-              <li><BsFillMoonStarsFill className="cursor-pointer text-2xl"/></li>
-              <li><a className="bg-blue-500 text-white px-4 py-2 border-none rounded-full ml-8 font-sans" href="#">Resume</a></li>
+            <Image src={logo} height="48px" width="48px" />
+            <ul className="flex items-center gap-8">
+              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">About Me<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
+              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Blog<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
+              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Work<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
+              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Resume<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
             </ul>
           </nav>
           <div className="flex flex-row justify-center">
@@ -28,13 +31,13 @@ export default function Home() {
                 <h2 className="text-5xl py-2 font-medium">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">William</span>.</h2>
                 <p className="text-md py-5 leading-8 text-slate-800">I'm a developer and designer focused on creating seamless experiences through software.</p>
               </div>
-              <div className="text-5xl flex justify-start gap-16 text-slate-600">
-                <AiFillMail className="cursor-pointer"/>
-                <AiFillLinkedin className="cursor-pointer" />
-                <AiFillGithub className="cursor-pointer" />
+              <div className="text-5xl flex justify-start gap-16">
+                <a href="mailto:liu.wllm@gmail.com" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillMail className="cursor-pointer" /></a>
+                <a href="https://www.linkedin.com/in/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillLinkedin className="cursor-pointer" /></a>
+                <a href="https://www.github.com/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillGithub className="cursor-pointer" /></a>
               </div>
             </div>
-            <div className="mx-10 relative rounded-full w-80 h-80 rotate-2 overflow-hidden ">
+            <div className="grow-0 shrink-0 mx-10 relative rounded-full w-80 h-80 rotate-2 overflow-hidden ">
               <Image src={profile} layout="fill" objectFit="cover" />
             </div>
           </div>
