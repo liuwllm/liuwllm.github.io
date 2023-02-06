@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillMail, AiFillLinkedin} from 'react-icons/ai'
-
+import Head from "next/head";
+import {BsFillMoonStarsFill} from "react-icons/bs";
+import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
+import Image from "next/legacy/image";
+import profile from "../../public/profile.png"
 
 export default function Home() {
   return (
@@ -18,17 +19,29 @@ export default function Home() {
             <h1 className="text-xl font-sans">Title</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill className="cursor-pointer text-2xl"/></li>
-              <li><a className="bg-sky-700 text-white px-4 py-2 border-none rounded-full ml-8 font-sans" href="#">Resume</a></li>
+              <li><a className="bg-blue-500 text-white px-4 py-2 border-none rounded-full ml-8 font-sans" href="#">Resume</a></li>
             </ul>
           </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 font-medium">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">William</span>.</h2>
-            <p>I'm a developer and designer focused on creating seamless experiences through software.</p>
+          <div className="flex flex-row justify-center">
+            <div className="mx-10 flex flex-col justify-center text-left p-10">
+              <div>
+                <h2 className="text-5xl py-2 font-medium">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">William</span>.</h2>
+                <p className="text-md py-5 leading-8 text-slate-800">I'm a developer and designer focused on creating seamless experiences through software.</p>
+              </div>
+              <div className="text-5xl flex justify-start gap-16 text-slate-600">
+                <AiFillMail className="cursor-pointer"/>
+                <AiFillLinkedin className="cursor-pointer" />
+                <AiFillGithub className="cursor-pointer" />
+              </div>
+            </div>
+            <div className="mx-10 relative rounded-full w-80 h-80 rotate-2 overflow-hidden ">
+              <Image src={profile} layout="fill" objectFit="cover" />
+            </div>
           </div>
-          <div>
-            <AiFillMail />
-            <AiFillLinkedin />
-          </div>
+        </section>
+
+        <section>
+
         </section>
       </main>
     </div>
