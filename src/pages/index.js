@@ -4,6 +4,7 @@ import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/legacy/image";
 import profile from "../../public/profile.png"
 import logo from "../../public/logo.png"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
               <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">About Me<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
               <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Blog<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
               <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Work<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
-              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Resume<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
+              <li><Link className="group text-xl font-medium text-slate-800 transition duration-200" href="/William_Liu_Resume.pdf" locale={false} target="_blank" rel="noopener noreferrer">Resume<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></Link></li>
             </ul>
           </nav>
           <div className="flex flex-row justify-center">
