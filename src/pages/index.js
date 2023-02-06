@@ -2,7 +2,7 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from "react-icons/bs";
 import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/legacy/image";
-import profile from "../../public/profile.png"
+import profile from "../../public/profile.jpg"
 import logo from "../../public/logo.png"
 import Link from "next/link";
 
@@ -15,19 +15,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-slate-175 px-10">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
+      <main className="bg-slate-200 px-10 overflow-visible">
+        <section className="min-h-screen min-w-fit">
+          <nav className="py-10 mb-12 flex justify-between items-center">
             <Image src={logo} height="48px" width="48px" />
             <ul className="flex items-center gap-8">
-              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">About Me<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
+              <li className="shrink-0 pl-8"><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">About Me<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
               <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Blog<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
               <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Work<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
               <li><Link className="group text-xl font-medium text-slate-800 transition duration-200" href="/William_Liu_Resume.pdf" locale={false} target="_blank" rel="noopener noreferrer">Resume<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></Link></li>
             </ul>
           </nav>
           <div className="flex flex-row justify-center">
-            <div className="mx-10 flex flex-col justify-center text-left p-10">
+            <div className="mx-11 flex flex-col justify-center text-left p-11 min-w-10 min-h-10">
               <div>
                 <h2 className="text-5xl py-2 font-medium">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">William</span>.</h2>
                 <p className="text-md py-5 leading-8 text-slate-800">I'm a developer and designer focused on creating seamless experiences through software.</p>
@@ -38,7 +38,7 @@ export default function Home() {
                 <a href="https://www.github.com/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillGithub className="cursor-pointer" /></a>
               </div>
             </div>
-            <div className="grow-0 shrink-0 mx-10 relative rounded-full w-80 h-80 rotate-2 overflow-hidden ">
+            <div className="flex shrink-0 justify-center relative rounded-full w-80 h-80 overflow-hidden">
               <Image src={profile} layout="fill" objectFit="cover" />
             </div>
           </div>
