@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-slate-200 min-h-screen">
-      <HeaderComponent />
+        <HeaderComponent />
             <div className="flex flex-wrap justify-around mx-5 my-3 p-5 sm:mx-20 sm:my-10 sm:p-10 ">
               <div className="flex flex-col justify-center text-left">
                 <div>
