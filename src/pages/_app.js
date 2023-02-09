@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import localfont from "@next/font/local"
 
 const inter = localfont({ 
-  src: '@/fonts/Inter.ttf',
+  src: url('/src/fonts/Inter.ttf'),
   variable: '--font-inter',
 })
 
