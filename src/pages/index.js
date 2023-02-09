@@ -1,10 +1,10 @@
 import Head from "next/head";
-import {BsFillMoonStarsFill} from "react-icons/bs";
 import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/legacy/image";
 import profile from "../../public/profile.jpg"
-import logo from "../../public/logo.png"
-import Link from "next/link";
+import kanji from "../../public/kanji.jpg"
+import ewcapp from "../../public/ewcapp.png"
+import HeaderComponent from "@/components/common/header";
 
 export default function Home() {
   return (
@@ -15,38 +15,55 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-slate-200 px-10 overflow-visible">
-        <section className="min-h-screen min-w-fit">
-          <nav className="py-10 mb-12 flex justify-between items-center">
-            <Image src={logo} height="48px" width="48px" />
-            <ul className="flex items-center gap-8">
-              <li className="shrink-0 pl-8"><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">About Me<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
-              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Blog<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
-              <li><a className="group text-xl font-medium text-slate-800 transition duration-200" href="#">Work<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></a></li>
-              <li><Link className="group text-xl font-medium text-slate-800 transition duration-200" href="/William_Liu_Resume.pdf" locale={false} target="_blank" rel="noopener noreferrer">Resume<span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-700"></span></Link></li>
-            </ul>
-          </nav>
-          <div className="flex flex-row justify-center">
-            <div className="mx-11 flex flex-col justify-center text-left p-11 min-w-10 min-h-10">
-              <div>
-                <h2 className="text-5xl py-2 font-medium">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">William</span>.</h2>
-                <p className="text-md py-5 leading-8 text-slate-800">I'm a developer and designer focused on creating seamless experiences through software.</p>
+      <main className="bg-slate-200 min-h-screen">
+      <HeaderComponent />
+            <div className="flex flex-wrap justify-around mx-5 my-3 p-5 sm:mx-20 sm:my-10 sm:p-10 ">
+              <div className="flex flex-col justify-center text-left">
+                <div>
+                  <h2 className="text-3xl sm:text-5xl py-2 font-medium">Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-500">William</span>.</h2>
+                  <p className="text-base sm:text-lg py-5 leading-8 text-slate-800">I'm a developer and designer focused on creating seamless experiences through software.</p>
+                </div>
+                <div className="text-3xl sm:text-5xl flex justify-start gap-16">
+                  <a href="mailto:liu.wllm@gmail.com" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillMail className="cursor-pointer" /></a>
+                  <a href="https://www.linkedin.com/in/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillLinkedin className="cursor-pointer" /></a>
+                  <a href="https://www.github.com/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillGithub className="cursor-pointer" /></a>
+                </div>
               </div>
-              <div className="text-5xl flex justify-start gap-16">
-                <a href="mailto:liu.wllm@gmail.com" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillMail className="cursor-pointer" /></a>
-                <a href="https://www.linkedin.com/in/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillLinkedin className="cursor-pointer" /></a>
-                <a href="https://www.github.com/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillGithub className="cursor-pointer" /></a>
+              <div className="flex p-10 shrink-0 items-center">
+                <div className="relative rounded-full w-60 h-60 sm:w-72 sm:h-72 lg:w-80 lg:h-80 overflow-hidden">
+                  <Image src={profile} layout="fill" objectFit="cover" />
+                </div>
               </div>
             </div>
-            <div className="flex shrink-0 justify-center relative rounded-full w-80 h-80 overflow-hidden">
-              <Image src={profile} layout="fill" objectFit="cover" />
+            <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10">
+              <div className="flex flex-col justify-center text-left">
+                <div id="work"><h2 className="text-left text-5xl py-3 font-medium mb-10 text-slate-800">Work</h2></div>
+                <div className="flex flex-col sm:flex-row justify-center my-5">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Kanji Detect</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">Kanji Detect is an application built in Python that allows users to more easily learn to read Japanese. Users 
+                    may input documents in .pdf and .txt formats, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses the 
+                    Jisho API to request data about the character such as pronunciation, the number of strokes, meanings, and other related data. The data is then compilated in a 
+                    .csv file, which can then be imported into flashcard software such as Anki to more easily facilitate learning kanji. </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-center">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <a href="https://github.com/christopherlam888/the-ewc/" target="_blank"><Image src={ewcapp} layout="fill" objectFit="cover" /></a>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                  <a href="https://github.com/christopherlam888/the-ewc/" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Everyday Watch Collector App</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">The Everyday Watch Collector app is a mobile app helping users learn more about horology and watch terminology, for which I built 
+                    the front-end. The front-end was built using XML in Android Studio, with a mockup built in <a href="https://www.figma.com/file/8ovOoiZKMXkb0tq0kwb9MN/UI?node-id=0%3A1" target="_blank"><span className="text-blue-700 hover:text-blue-500 font-medium">Figma</span></a>.
+                    The app consists of a glossary page containing common watch terms and a videos page which directs users to videos reviewing watches and going over related horology topics.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-
-        <section>
-
-        </section>
       </main>
     </div>
   );
