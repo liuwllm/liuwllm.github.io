@@ -1,9 +1,9 @@
 import '@/styles/globals.css'
-import { Inter } from '@next/font/google'
+import localfont from "@next/font/local"
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-inter', 
+const inter = localfont({ 
+  src: './fonts/Inter.ttf',
+  variable: '--font-inter',
 })
 
 export default function App({ Component, pageProps }) {
