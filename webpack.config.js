@@ -1,8 +1,15 @@
-module: {
+  module: {
     rules: [
       {
-       test: /\.(woff|woff2|eot|ttf|otf)$/i,
-       type: 'asset/resource',
-      },
-    ],
-  },
+          test: /\.ttf$/,
+          use: [
+            {
+              loader: 'ttf-loader',
+              options: {
+                name: './font/[hash].[ext]',
+              },
+            },
+          ]
+      }
+    ]
+ }
