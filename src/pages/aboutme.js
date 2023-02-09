@@ -22,16 +22,16 @@ export default function About() {
             <HeaderComponent />
             <div className="flex flex-col sm:flex-row justify-around mx-5 sm:mx-20">
                 <div className="flex flex-col justify-center p-10">
-                    <h2 className="text-5xl font-medium text-slate-800 py-2">About Me</h2>
-                    <p className="text-xl text-slate-800 pt-4">Hello! I'm a student at Western University planning to study a dual degree Computer Science and Business. I'm 
+                    <h2 className="text-5xl font-weight-500 text-slate-800 py-2">About Me</h2>
+                    <p className="text-xl text-slate-800 pt-4">Hello! I'm a student at Western University planning to study a dual degree in Computer Science and Business. I'm 
                     someone who's passionate about learning and creating, combining an analytical mind with creative aspirations.</p>
                     <p className="text-xl text-slate-800 pt-4">Some of my hobbies include:</p>
                     <p className="text-2xl text-slate-800 pt-2 pl-5"><span className="text-blue-700 font-medium">learning languages</span>,</p>
-                    <p className="text-xl text-slate-800 pt-1 pl-7">I've learnt French up to around a B1-B2 level. Currently, I'm trying to improve my Mandarin in 
-                    terms of reading/writing and learning a bit of Japanese on the side. Also hoping to learn Korean sometime in the future.</p>
+                    <p className="text-xl text-slate-800 pt-1 pl-7">I've learnt French up to around a B2 level. Currently, I'm trying to improve my reading and writing in Mandarin 
+                    in addition to learning a bit of Japanese on the side. I'm also hoping to learn Korean sometime in the future.</p>
                     <p className="text-2xl text-slate-800 pt-2 pl-5"><span className="text-blue-700 font-medium">graphic design</span>,</p>
                     <p className="text-xl text-slate-800 pt-1 pl-7">I started having an interest in graphic design while working on my Grade 8 yearbook. Since then, 
-                    I've done graphics anywhere they're needed from school club social medias to business presentations to personal projects.</p> 
+                    I've done graphics anywhere they're needed from social media posts for school clubs to business presentations to personal projects.</p> 
                     <p className="text-2xl text-slate-800 pt-2 pl-5">and <span className="text-blue-700 font-medium">cooking</span>.</p>
                     <p className="text-xl text-slate-800 pt-1 pl-7">Much of the inspiration for what I've cooked have come from cravings during quarantine. I've dabbled
                     with recipes such as oven fries, pasta bolognese, and chicken congee. My go-to when cooking, however, is stir-fry, especially given its versatility.</p> 

@@ -60,7 +60,7 @@ export default function Home() {
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
                   <a href="https://github.com/christopherlam888/the-ewc/" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Everyday Watch Collector App</h2></a>
                     <p className="text-left text-base sm:text-lg text-slate-800">The Everyday Watch Collector app is a mobile app helping users learn more about horology and watch terminology, for which I built 
-                    the front-end. The front-end was built using XML in Android Studio, with a mockup built in <a href="https://www.figma.com/file/8ovOoiZKMXkb0tq0kwb9MN/UI?node-id=0%3A1" target="_blank"><span className="text-blue-700 hover:text-blue-500 font-medium">Figma</span></a>.
+                    the front-end. The front-end was developed using XML in Android Studio, with a mockup created in <a href="https://www.figma.com/file/8ovOoiZKMXkb0tq0kwb9MN/UI?node-id=0%3A1" target="_blank"><span className="text-blue-700 hover:text-blue-500 font-medium">Figma</span></a>.
                     The app consists of a glossary page containing common watch terms and a videos page which directs users to videos reviewing watches and going over related horology topics.
                     </p>
                   </div>
