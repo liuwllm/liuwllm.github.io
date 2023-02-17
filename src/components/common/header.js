@@ -4,7 +4,6 @@ import Image from "next/legacy/image";
 
 const links = [{ label: 'Solutions', href: '#solutions', id: 'solutions' }]
 
-
 function HeaderComponent() {    
     return (        
             <nav className="p-10 mb-10 flex flex-col sm:flex-row justify-between items-center">

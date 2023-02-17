@@ -18,7 +18,7 @@ export default function About() {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         </Head>
-        <main className="bg-slate-200 min-h-screen min-w-fit font-sans">
+        <main className="bg-gradient-to-b from-slate-200 to-slate-100 min-h-screen min-w-fit font-sans">
             <HeaderComponent />
             <div className="flex flex-col sm:flex-row justify-around mx-5 sm:mx-20">
                 <div className="flex flex-col justify-center p-10">

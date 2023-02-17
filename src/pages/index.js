@@ -1,10 +1,12 @@
 import Head from "next/head";
 import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/legacy/image";
+import Link from "next/link";
 import profile from "../../public/profile.jpg"
 import kanji from "../../public/kanji.jpg"
 import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
+
 
 export default function Home() {
   return (
@@ -18,7 +20,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
-      <main className="bg-slate-200 min-h-screen font-sans">
+      <main className="bg-gradient-to-b from-slate-200 to-slate-100 min-h-screen font-sans">
         <HeaderComponent />
             <div className="flex flex-wrap justify-around mx-5 my-3 p-5 sm:mx-20 sm:my-10 sm:p-10 ">
               <div className="flex flex-col justify-center text-left">
@@ -41,6 +43,17 @@ export default function Home() {
             <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10">
               <div className="flex flex-col justify-center text-left">
                 <div id="work"><h2 className="text-left text-5xl py-3 font-medium mb-10 text-slate-800">Work</h2></div>
+                <div className="flex flex-col sm:flex-row justify-start my-5">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <Link href="/cookeasy"><Image src={kanji} layout="fill" objectFit="cover" /></Link>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                    <Link href="/cookeasy"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">CookEasy</h2></Link>
+                    <p className="text-left text-base sm:text-lg text-slate-800">CookEasy is a UX case study aimed at creating a software solution to promote meal planning and cooking at home. 
+                    Research was conducted for the case study over the course of 4 days, and a prototype was subsequently designed in Figma. The designed app focuses on a modular approach to meal
+                    planning and features integration with online recipes and grocery delivery apps to encourage at-home cooking.</p>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row justify-center my-5">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
                     <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
