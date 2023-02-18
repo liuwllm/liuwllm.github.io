@@ -177,7 +177,7 @@ export default function CookEasy() {
                         </div>
                     </div>
                     <h3 className="text-left text-xl sm:text-3xl py-3 px-3 font-medium text-slate-800">Final Prototype</h3>
-                    <iframe className="w-fill h-[42rem]"
+                    <iframe className="w-fill h-[42rem] mb-10"
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkj3ftXGk5h2VbWmK2loJjF%2FUX-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D1%253A3%26viewport%3D302%252C244%252C0.12%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A3" 
                     allowfullscreen></iframe>
                 </div>
