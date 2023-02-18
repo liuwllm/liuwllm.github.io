@@ -22,7 +22,7 @@ export default function About() {
             <HeaderComponent />
             <div className="flex flex-col sm:flex-row justify-around mx-5 sm:mx-20">
                 <div className="flex flex-col justify-center p-10">
-                    <h2 className="text-5xl font-weight-500 text-slate-800 py-2">About Me</h2>
+                    <h2 className="text-5xl font-medium text-slate-800 py-2">About Me</h2>
                     <p className="text-xl text-slate-800 pt-4">Hello! I'm a student at Western University planning to study a dual degree in Computer Science and Business. I'm 
                     someone who's passionate about learning and creating, combining an analytical mind with creative aspirations.</p>
                     <p className="text-xl text-slate-800 pt-4">Some of my hobbies include:</p>

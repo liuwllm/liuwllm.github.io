@@ -6,6 +6,7 @@ import profile from "../../public/profile.jpg"
 import kanji from "../../public/kanji.jpg"
 import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
+import cookEasy from "../../public/phones.png"
 
 
 export default function Home() {
@@ -45,7 +46,7 @@ export default function Home() {
                 <div id="work"><h2 className="text-left text-5xl py-3 font-medium mb-10 text-slate-800">Work</h2></div>
                 <div className="flex flex-col sm:flex-row justify-start my-5">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <Link href="/cookeasy"><Image src={kanji} layout="fill" objectFit="cover" /></Link>
+                    <Link href="/cookeasy"><Image src={cookEasy} layout="fill" objectFit="cover" /></Link>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
                     <Link href="/cookeasy"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">CookEasy</h2></Link>

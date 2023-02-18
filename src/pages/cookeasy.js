@@ -2,8 +2,26 @@ import Head from "next/head";
 import Image from "next/legacy/image";
 import HeaderWhiteComponent from "@/components/common/headerwhite";
 import phones from "../../public/phones.png";
+import jeffrey from "../../public/cookeasy/userpersona1.png";
+import mia from "../../public/cookeasy/userpersona2.png";
+import competitors from "../../public/cookeasy/competitors.png";
+import features from "../../public/cookeasy/features.png";
+import styleguide from "../../public/styleguide.png";
 
-export default function About() {
+import home from "../../public/wireframe/home.png"
+import searchresults from "../../public/wireframe/searchresults.png";
+
+import ingredient from "../../public/wireframe/ingredient.png";
+import ingredientslist from "../../public/wireframe/ingredientslist.png";
+
+import component from "../../public/wireframe/component.png";
+import addcomponent from "../../public/wireframe/addcomponent.png";
+import componentslist from "../../public/wireframe/componentslist.png";
+
+import shoppinglist from "../../public/wireframe/shoppinglist.png";
+import grocery from "../../public/wireframe/grocery.png";
+
+export default function CookEasy() {
     return (
     <div>
         <Head>
@@ -18,38 +36,150 @@ export default function About() {
         <main className="bg-gradient-to-b from-slate-200 to-slate-100 min-h-screen min-w-fit font-sans">
             <div className="bg-gradient-to-b from-green-600 to-lime-500 pb-20 sm:pb-50">
                 <HeaderWhiteComponent />
-                <div className="flex flex-col lg:flex-row justify-around mx-5 sm:mx-20">
+                <div className="flex flex-col lg:flex-row justify-around mx-1 sm:mx-10 md:mx-20">
                     <div className="flex shrink flex-col justify-center p-10">
                         <h2 className="text-5xl font-semibold text-white py-2">CookEasy</h2>
                         <p className="text-xl font-semibold text-white pt-4">Timeline: <span className="font-normal">February 2023 (4 days; design sprint)</span></p>
                         <p className="text-xl font-semibold text-white pt-4">Type: <span className="font-normal">App design, personal project</span></p>
                         <p className="text-xl font-semibold text-white pt-4">Tools: <span className="font-normal">Figma</span></p>
                     </div>
-                    <div className="h-fill w-96 md:w-[28rem] lg:w-[32rem] xl:w-[48rem] relative sm:pt-15">
+                    <div className="h-fill w-64 sm:w-96 md:w-[28rem] lg:w-[32rem] xl:w-[48rem] relative sm:pt-15">
                         <Image src={phones} />
                     </div>
                 </div>
             </div>
             <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10 md:mx-36 md:p-14">
                 <div className="flex flex-col justify-center text-left">
-                    <h2 className="text-left text-5xl py-5 font-medium text-slate-800">Background Information</h2>
-                    <h3 className="text-left text-3xl py-3 font-medium text-slate-800">Overview</h3>
-                    <p className="text-left text-xl py-2 font-normal text-slate-800 leading-10">A common issue that many people encounter in their day-to-day lives that many 
+                    <h2 className="text-left text-3xl sm:text-5xl py-5 font-medium text-slate-800">Background Information</h2>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Overview</h3>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">A common issue that many people encounter in their day-to-day lives that many 
                     people face is the challenge of cooking on a consistent basis. Especially given busy schedules and the significant effort required to plan out and cook 
                     meals, many have resorted to eating out rather than cooking for themselves. Given that eating out can often be expensive and unhealthy, I wanted to develop 
                     a solution that was able to address the difficulties of cooking regularly.</p>
-                    <p className="text-left text-xl py-2 font-normal text-slate-800 leading-10">Upon conducting research & user interviews, I found some of the key insights to 
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">Upon conducting research & user interviews, I found some of the key insights to 
                     consider when tackling this issue to be:</p>
-                    <p className="text-left text-xl pl-5 pt-10 pb-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">1. </span>Cooking (considering 
+                    <p className="text-left text-lg sm:text-xl pl-5 pt-10 pb-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">1. </span>Cooking (considering 
                     kitchen prep/cleaning & cooking time) often requires significant investment in time and energy when done consistently.</p>
-                    <p className="text-left text-xl pl-5 py-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">2. </span>Finding recipes when 
+                    <p className="text-left text-lg sm:text-xl pl-5 py-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">2. </span>Finding recipes when 
                     planning out meals while attempting to maintain variety introduces additional barriers to cooking on a regular basis.</p>
-                    <p className="text-left text-xl pl-5 py-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">3. </span>Buying groceries can
+                    <p className="text-left text-lg sm:text-xl pl-5 py-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">3. </span>Buying groceries can
                     be inconvenient, especially for people with busy schedules, and can be a major deterrent to at-home cooking. </p>
-                    <p className="text-left text-xl pl-5 pt-3 pb-10 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">4. </span>Considering health and
+                    <p className="text-left text-lg sm:text-xl pl-5 pt-3 pb-10 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">4. </span>Considering health and
                     nutritional needs in meal planning further complicates the process of planning meals. </p>
-                    <p className="text-left text-xl py-2 font-normal text-slate-800 leading-10"><span className="font-semibold">Problem Statement: </span> People experience considerable
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10"><span className="font-semibold">Problem Statement: </span> People experience considerable
                     difficulties with cooking at home consistently and need a way to more easily complete the meal planning process.</p>
+
+                    <h2 className="text-left text-3xl sm:text-5xl py-5 font-medium text-slate-800">Research & Ideation</h2>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">Given this understanding of the problem, I worked to further clarify the scope of the issue
+                    and begin developing potential solutions to the problem at hand.</p>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">User Personas</h3>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">To get to the core of what types of solutions consumerrs would want to see, I developed two
+                    user personas to cover two potential situations with a shared problem of having difficulties with meal planning.</p>
+                    <div className="flex flex-col justify-center align-center xl:flex-row py-3">
+                        <div className="relative w-64 sm:w-80 md:w-96 lg:w-[32rem] xl:w-[36rem] h-auto px-5">
+                            <Image src={jeffrey} />
+                        </div>
+                        <div className="relative w-64 sm:w-80 md:w-96 lg:w-[32rem] xl:w-[36rem] h-auto px-5">
+                            <Image src={mia} />
+                        </div>
+                    </div>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Competitor Analysis</h3>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">I also examined some services and apps that addressed a similar issue
+                    of making it easier to cook healthy meals at home to get a better idea of what types of features could be implemented and where room for improvement exists. I
+                    specifically took a look at HelloFresh, a meal delivery kit service, and Paprika, a meal-planning app.</p>
+                    <div className="self-center relative w-64 sm:w-96 md:w-[36rem] lg:w-[48rem] xl:w-[54rem] h-auto px-5">
+                        <Image src={competitors} />
+                    </div>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">How Might We?</h3>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">This examination of the issue led me to construct a few key questions that helped
+                    guide my understanding of how to implement a solution:</p>
+                    <p className="text-left text-lg sm:text-xl pl-5 pt-5 pb-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">1. </span>How might we
+                    give users the ability to expend less effort cooking and meal planning while still allowing for flexibility in the types of meals cooked throughout the week?</p>
+                    <p className="text-left text-lg sm:text-xl pl-5 pt-5 pb-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">2. </span>How might we 
+                    ensure that users develop meals that meet their nutritional needs?</p>
+                    <p className="text-left text-lg sm:text-xl pl-5 pt-5 pb-3 font-normal text-slate-600 leading-10"><span className="text-green-600 font-semibold">3. </span>How might we
+                    make the process of going from meal planning to grocery shopping more convenient for users?</p>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Feature Prioritization</h3>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">With these points in mind, I moved to ideating a list of potential features
+                    that an app designed to solve this problem might include. From there,10 I looked towards my own analysis in combination with user interviews to determine which features
+                    might be most useful to potential users.</p>
+                    <div className="self-center relative w-64 sm:w-96 md:w-[36rem] lg:w-[48rem] xl:w-[54rem] h-auto px-5">
+                        <Image src={features}/>
+                    </div>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">What I found, given some of the key insights of the problem, was that users
+                    needed a way to be able to more conveniently plan their meals while still maintaining some flexibility in terms of what they cook every day. Users need a way to be
+                    able to easily assess what food options make sense for their own dietary needs. Furthermore, being able to alleviate decision fatigue when planning meals through
+                    recommendations was another area of focus for users.</p>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">This helped inspire a modular approach to meal planning to be implemented 
+                    in my own app. This approach would center the meal-planning process around ingredients to help users better understand their nutritional intake and have a more flexible
+                    starting point when planning meals. Ingredients can be combined to form components, either automatically using online recipes or manually by the user. Different components
+                    can combine as well in order to form larger meals. The aim of this approach would ultimately be to introduce flexibility to the meal-planning process while still maintaining
+                    a sense of structure and organization for the meal-planning process. Additionally, both ingredients and recipes would be recommended on the homepage of the app to give users
+                    suggestions that would help address decision fatigue.</p>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">Finally, other features that users valued such as nutritional data, a shopping list,
+                    and integration with online grocery delivery were also implemented.</p>
+                    <h2 className="text-left text-3xl sm:text-5xl py-5 font-medium text-slate-800">Prototype</h2>
+                    <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">With all of these insights in mind, I built a prototype for the CookEasy app on Figma.</p>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Styleguide</h3>
+                    <div className="self-start relative w-64 sm:w-96 md:w-[36rem] lg:w-[48rem] xl:w-[54rem] h-fill px-5">
+                        <Image src={styleguide} />
+                    </div>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Hi-fi Wireframes</h3>
+                    <div className="flex flex-col sm:flex-row">   
+                        <div className="flex flex-col pr-10 sm:pr-20">
+                            <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Home</h4>
+                            <div className="flex flex-col sm:flex-row justify-start">
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={home} />
+                                </div>
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={searchresults} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Ingredients</h4>
+                            <div className="flex flex-col sm:flex-row justify-start">
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={ingredient} />
+                                </div>
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={ingredientslist} />
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className="flex flex-col sm:flex-row">
+                        <div className="flex flex-col pr-10 sm:pr-20">
+                            <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Components</h4>
+                            <div className="flex flex-col sm:flex-row justify-start">
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={component} />
+                                </div>
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={addcomponent} />
+                                </div>
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={componentslist} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Shopping</h4>
+                            <div className="flex flex-col sm:flex-row justify-start">
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={shoppinglist} />
+                                </div>
+                                <div className="relative w-72 h-auto px-5 rounded-md">
+                                    <Image src={grocery} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Final Prototype</h3>
+                    <iframe className="w-fill h-[48rem]"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkj3ftXGk5h2VbWmK2loJjF%2FUX-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D1%253A3%26viewport%3D302%252C244%252C0.12%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A3" 
+                    allowfullscreen></iframe>
                 </div>
             </div>
         </main>
