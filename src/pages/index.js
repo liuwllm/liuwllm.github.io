@@ -6,7 +6,7 @@ import profile from "../../public/profile.jpg"
 import kanji from "../../public/kanji.jpg"
 import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
-import cookEasy from "../../public/phones.png"
+import cookEasy from "../../public/cookeasythumb.png";
 
 
 export default function Home() {
