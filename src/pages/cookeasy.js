@@ -36,20 +36,20 @@ export default function CookEasy() {
         <main className="bg-gradient-to-b from-slate-200 to-slate-100 min-h-screen min-w-fit font-sans">
             <div className="bg-gradient-to-b from-green-600 to-lime-500 pb-20 sm:pb-50">
                 <HeaderWhiteComponent />
-                <div className="flex flex-col lg:flex-row justify-around mx-1 sm:mx-10 md:mx-20">
+                <div className="flex flex-col xl:flex-row justify-center mx-1 sm:mx-5 md:mx-10">
                     <div className="flex shrink flex-col justify-center p-10">
                         <h2 className="text-5xl font-semibold text-white py-2">CookEasy</h2>
                         <p className="text-xl font-semibold text-white pt-4">Timeline: <span className="font-normal">February 2023 (4 days; design sprint)</span></p>
                         <p className="text-xl font-semibold text-white pt-4">Type: <span className="font-normal">App design, personal project</span></p>
                         <p className="text-xl font-semibold text-white pt-4">Tools: <span className="font-normal">Figma</span></p>
                     </div>
-                    <div className="h-fill w-64 sm:w-96 md:w-[28rem] lg:w-[32rem] xl:w-[48rem] relative sm:pt-15">
+                    <div className="h-fill w-52 sm:w-64 md:w-72 lg:w-96 xl:w-[32rem] relative sm:pt-15">
                         <Image src={phones} />
                     </div>
                 </div>
             </div>
-            <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10 md:mx-36 md:p-14">
-                <div className="flex flex-col justify-center text-left">
+            <div className="flex justify-start mx-5 sm:mx-10 md:mx-20">
+                <div className="flex flex-col justify-center text-left pt-20">
                     <h2 className="text-left text-3xl sm:text-5xl py-5 font-medium text-slate-800">Background Information</h2>
                     <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Overview</h3>
                     <p className="text-left text-lg sm:text-xl py-2 font-normal text-slate-800 leading-10">A common issue that many people encounter in their day-to-day lives that many 
@@ -125,59 +125,59 @@ export default function CookEasy() {
                         <Image src={styleguide} />
                     </div>
                     <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Hi-fi Wireframes</h3>
-                    <div className="flex flex-col sm:flex-row">   
-                        <div className="flex flex-col pr-10 sm:pr-20">
+                    <div className="flex flex-col xl:flex-row">   
+                        <div className="flex flex-col pr-10 sm:pr-10">
                             <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Home</h4>
                             <div className="flex flex-col sm:flex-row justify-start">
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={home} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={home} layout="fill" objectFit="cover"/>
                                 </div>
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={searchresults} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={searchresults} layout="fill" objectFit="cover"/>
                                 </div>
                             </div>
                         </div>
                         <div className="flex flex-col">
                             <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Ingredients</h4>
                             <div className="flex flex-col sm:flex-row justify-start">
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={ingredient} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={ingredient} layout="fill" objectFit="cover"/>
                                 </div>
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={ingredientslist} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={ingredientslist} layout="fill" objectFit="cover"/>
                                 </div>
                             </div>
                         </div>
                     </div> 
-                    <div className="flex flex-col sm:flex-row">
-                        <div className="flex flex-col pr-10 sm:pr-20">
+                    <div className="flex flex-col xl:flex-row mb-5">
+                        <div className="flex flex-col pr-10 sm:pr-10">
                             <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Components</h4>
                             <div className="flex flex-col sm:flex-row justify-start">
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={component} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={component} layout="fill" objectFit="cover"/>
                                 </div>
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={addcomponent} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={addcomponent} layout="fill" objectFit="cover"/>
                                 </div>
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={componentslist} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={componentslist} layout="fill" objectFit="cover"/>
                                 </div>
                             </div>
                         </div>
                         <div className="flex flex-col">
                             <h4 className="text-left text-lg sm:text-2xl py-3 pl-5 font-medium text-slate-800">Shopping</h4>
                             <div className="flex flex-col sm:flex-row justify-start">
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={shoppinglist} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={shoppinglist} layout="fill" objectFit="cover"/>
                                 </div>
-                                <div className="relative w-72 h-auto px-5 rounded-md">
-                                    <Image src={grocery} />
+                                <div className="relative w-24 h-[13rem] sm:w-36 sm:h-[19.5rem] md:w-48 md:h-[26rem] mx-5 rounded-md overflow-hidden">
+                                    <Image src={grocery} layout="fill" objectFit="cover"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h3 className="text-left text-xl sm:text-3xl py-3 font-medium text-slate-800">Final Prototype</h3>
-                    <iframe className="w-fill h-[48rem]"
+                    <h3 className="text-left text-xl sm:text-3xl py-3 px-3 font-medium text-slate-800">Final Prototype</h3>
+                    <iframe className="w-fill h-[42rem]"
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fkj3ftXGk5h2VbWmK2loJjF%2FUX-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D1%253A3%26viewport%3D302%252C244%252C0.12%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A3" 
                     allowfullscreen></iframe>
                 </div>

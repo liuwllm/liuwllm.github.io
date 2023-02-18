@@ -55,18 +55,6 @@ export default function Home() {
                     planning and features integration with online recipes and grocery delivery apps to encourage at-home cooking.</p>
                   </div>
                 </div>
-                <div className="flex flex-col sm:flex-row justify-center my-5">
-                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
-                  </div>
-                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Kanji Detect</h2></a>
-                    <p className="text-left text-base sm:text-lg text-slate-800">Kanji Detect is an application built in Python that allows users to more easily learn to read Japanese. Users 
-                    may input documents in .pdf and .txt formats, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses the 
-                    Jisho API to request data about the character such as pronunciation, the number of strokes, meanings, and other related data. The data is then compilated in a 
-                    .csv file, which can then be imported into flashcard software such as Anki to more easily facilitate learning kanji. </p>
-                  </div>
-                </div>
                 <div className="flex flex-col sm:flex-row justify-center">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
                     <a href="https://github.com/christopherlam888/the-ewc/" target="_blank"><Image src={ewcapp} layout="fill" objectFit="cover" /></a>
@@ -77,6 +65,18 @@ export default function Home() {
                     the front-end. The front-end was developed using XML in Android Studio, with a mockup created in <a href="https://www.figma.com/file/8ovOoiZKMXkb0tq0kwb9MN/UI?node-id=0%3A1" target="_blank"><span className="text-blue-700 hover:text-blue-500 font-medium">Figma</span></a>.
                     The app consists of a glossary page containing common watch terms and a videos page which directs users to videos reviewing watches and going over related horology topics.
                     </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-center my-5">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Kanji Detect</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">Kanji Detect is an application built in Python that allows users to more easily learn to read Japanese. Users 
+                    may input documents in .pdf and .txt formats, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses the 
+                    Jisho API to request data about the character such as pronunciation, the number of strokes, meanings, and other related data. The data is then compilated in a 
+                    .csv file, which can then be imported into flashcard software such as Anki to more easily facilitate learning kanji. </p>
                   </div>
                 </div>
               </div>
