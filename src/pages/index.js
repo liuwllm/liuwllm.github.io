@@ -7,6 +7,7 @@ import kanji from "../../public/kanji.jpg"
 import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
 import cookEasy from "../../public/cookeasythumb.png";
+import letThemCook from "../../public/letthemcook.jpg";
 
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
       </Head>
       <main className="bg-gradient-to-b from-slate-200 to-slate-100 min-h-screen font-sans">
-        <HeaderComponent />
+        <HeaderComponent />          
             <div className="flex flex-wrap justify-around mx-5 my-3 p-5 sm:mx-20 sm:my-10 sm:p-10 ">
               <div className="flex flex-col justify-center text-left">
                 <div>
@@ -44,15 +45,28 @@ export default function Home() {
             <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10">
               <div className="flex flex-col justify-center text-left">
                 <div id="work"><h2 className="text-left text-5xl py-3 font-medium mb-10 text-slate-800">Work</h2></div>
-                <div className="flex flex-col sm:flex-row justify-start my-5">
+                <div className="flex flex-col sm:flex-row justify-center my-5">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <Link href="/cookeasy"><Image src={cookEasy} layout="fill" objectFit="cover" /></Link>
+                    <a href="https://github.com/liuwllm/sunshelf" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                    <Link href="/cookeasy"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">CookEasy</h2></Link>
-                    <p className="text-left text-base sm:text-lg text-slate-800">CookEasy is a UX case study aimed at creating a software solution to promote meal planning and cooking at home. 
-                    Research was conducted for the case study over the course of 4 days, and a prototype was subsequently designed in Figma. The designed app focuses on a modular approach to meal
-                    planning and features integration with online recipes and grocery delivery apps to encourage at-home cooking.</p>
+                    <a href="https://github.com/liuwllm/sunshelf" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Sunshelf</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">Sunshelf is a web application built using React, Flask, and MongoDB that allows users to more easily learn to read Japanese. Users 
+                    may upload text documents to the web application, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses MeCab to segment the text
+                    into individual Japanese words. The words are looked up using JMdict and presented as exportable flashcards to the user. These flashcards can be imported into flashcard software such as 
+                    Anki to more easily facilitate learning kanji. </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-center">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <a href="https://devpost.com/software/let-them-cook" target="_blank"><Image src={letThemCook} layout="fill" objectFit="cover" /></a>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                  <a href="https://devpost.com/software/let-them-cook" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Let Them Cook</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">Let Them Cook is a web application built using React and Flask to make it easier for people to cook. Using a list of inputted ingredients,
+                    recipes from a database will be searched through and selected to best match the user's list. Recipes were scraped from online cooking websites using a Python web scraper. The project won Best Beginner
+                    Hack at Pride Hacks 2023.
+                    </p>
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-center">
@@ -66,17 +80,16 @@ export default function Home() {
                     The app consists of a glossary page containing common watch terms and a videos page which directs users to videos reviewing watches and going over related horology topics.
                     </p>
                   </div>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-center my-5">
+                </div>  
+                <div className="flex flex-col sm:flex-row justify-start my-5">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
+                    <Link href="/cookeasy"><Image src={cookEasy} layout="fill" objectFit="cover" /></Link>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                    <a href="https://github.com/liuwllm/kanji-detect" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Kanji Detect</h2></a>
-                    <p className="text-left text-base sm:text-lg text-slate-800">Kanji Detect is an application built in Python that allows users to more easily learn to read Japanese. Users 
-                    may input documents in .pdf and .txt formats, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses the 
-                    Jisho API to request data about the character such as pronunciation, the number of strokes, meanings, and other related data. The data is then compilated in a 
-                    .csv file, which can then be imported into flashcard software such as Anki to more easily facilitate learning kanji. </p>
+                    <Link href="/cookeasy"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">CookEasy</h2></Link>
+                    <p className="text-left text-base sm:text-lg text-slate-800">CookEasy is a UX case study aimed at creating a software solution to promote meal planning and cooking at home. 
+                    Research was conducted for the case study over the course of 4 days, and a prototype was subsequently designed in Figma. The designed app focuses on a modular approach to meal
+                    planning and features integration with online recipes and grocery delivery apps to encourage at-home cooking.</p>
                   </div>
                 </div>
               </div>
