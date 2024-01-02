@@ -3,7 +3,7 @@ import {AiFillMail, AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import profile from "../../public/profile.jpg"
-import kanji from "../../public/kanji.jpg"
+import sunshelf from "../../public/sunshelf.png"
 import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
 import cookEasy from "../../public/cookeasythumb.png";
@@ -47,7 +47,7 @@ export default function Home() {
                 <div id="work"><h2 className="text-left text-5xl py-3 font-medium mb-10 text-slate-800">Work</h2></div>
                 <div className="flex flex-col sm:flex-row justify-center my-5">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://github.com/liuwllm/sunshelf" target="_blank"><Image src={kanji} layout="fill" objectFit="cover" /></a>
+                    <a href="https://github.com/liuwllm/sunshelf" target="_blank"><Image src={sunshelf} layout="fill" objectFit="cover" /></a>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
                     <a href="https://github.com/liuwllm/sunshelf" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Sunshelf</h2></a>
