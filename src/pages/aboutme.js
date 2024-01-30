@@ -32,7 +32,7 @@ export default function About() {
                     <p className="text-2xl text-slate-800 pt-2 pl-5"><span className="text-blue-700 font-medium">graphic design</span>,</p>
                     <p className="text-xl text-slate-800 pt-1 pl-7">I started having an interest in graphic design while working on my Grade 8 yearbook. Since then, 
                     I've done graphics anywhere they're needed from social media posts for school clubs to business presentations to personal projects.</p> 
-                    <p className="text-2xl text-slate-800 pt-2 pl-5">and <span className="text-blue-700 font-medium">cooking</span>.</p>
+                    <p className="text-2xl text-slate-800 pt-2 pl-5"><span className="text-blue-700 font-medium">cooking</span>.</p>
                     <p className="text-xl text-slate-800 pt-1 pl-7">Much of the inspiration for what I've cooked have come from cravings during quarantine. I've dabbled
                     with recipes such as oven fries, pasta bolognese, and chicken congee. My go-to when cooking, however, is stir-fry, especially given its versatility.</p> 
                 </div>
