@@ -8,7 +8,7 @@ import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
 import cookEasy from "../../public/cookeasythumb.png";
 import letThemCook from "../../public/letthemcook.jpg";
-
+import etl from "../../public/TTTETL.png";
 
 export default function Home() {
   return (
@@ -31,9 +31,9 @@ export default function Home() {
                   <p className="text-base sm:text-lg py-5 leading-8 text-slate-800">I'm a developer and designer focused on creating seamless experiences through software.</p>
                 </div>
                 <div className="text-3xl sm:text-5xl flex justify-start gap-16">
-                  <a href="mailto:liu.wllm@gmail.com" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillMail className="cursor-pointer" /></a>
-                  <a href="https://www.linkedin.com/in/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillLinkedin className="cursor-pointer" /></a>
-                  <a href="https://www.github.com/liuwllm" target="_blank" className="text-slate-600 hover:text-blue-700"><AiFillGithub className="cursor-pointer" /></a>
+                  <a href="mailto:liu.wllm@gmail.com" className="text-slate-600 hover:text-blue-700"><AiFillMail className="cursor-pointer" /></a>
+                  <a href="https://www.linkedin.com/in/liuwllm" className="text-slate-600 hover:text-blue-700"><AiFillLinkedin className="cursor-pointer" /></a>
+                  <a href="https://www.github.com/liuwllm" className="text-slate-600 hover:text-blue-700"><AiFillGithub className="cursor-pointer" /></a>
                 </div>
               </div>
               <div className="flex p-10 shrink-0 items-center">
@@ -44,13 +44,26 @@ export default function Home() {
             </div>
             <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10">
               <div className="flex flex-col justify-center text-left">
-                <div id="work"><h2 className="text-left text-5xl py-3 font-medium mb-10 text-slate-800">Work</h2></div>
-                <div className="flex flex-col sm:flex-row justify-center my-5">
+                <div id="projects"><h2 className="text-left text-5xl py-3 font-medium text-slate-800">Projects</h2></div>
+                <div className="flex flex-col sm:flex-row justify-center">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://github.com/liuwllm/sunshelf" target="_blank"><Image src={sunshelf} layout="fill" objectFit="cover" /></a>
+                    <a href="https://github.com/liuwllm/twitch-to-twitter-etl"><Image src={etl} layout="fill" objectFit="cover" /></a>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                    <a href="https://github.com/liuwllm/sunshelf" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Sunshelf</h2></a>
+                  <a href="https://github.com/liuwllm/twitch-to-twitter-etl"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Twitch to Twitter ETL</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">Twitch to Twitter ETL is an ETL pipeline built using Node.js that collects Twitter data from top Twitch streamers and loads this data into a MongoDB database.
+                    This project makes use of the Twitch API to retrieve Twitch streamers with the highest CCV. A Twitter username is found for each streamer by scraping the streamer's About section on Twitch using Puppeteer. From these usernames,
+                    a Twitter API hosted on RapidAPI is called using concurrent asynchronous requests to retrieve tweet and Twitter profile data. This data is parsed and inserted into a MongoDB collection. This collection is then continuously aggregated
+                    to generate a 30-day view of each user.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-center my-5">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <a href="https://github.com/liuwllm/sunshelf"><Image src={sunshelf} layout="fill" objectFit="cover" /></a>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                    <a href="https://github.com/liuwllm/sunshelf"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Sunshelf</h2></a>
                     <p className="text-left text-base sm:text-lg text-slate-800">Sunshelf is a web application built using React, Flask, and MongoDB that allows users to more easily learn to read Japanese. Users 
                     may upload text documents to the web application, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses MeCab to segment the text
                     into individual Japanese words. The words are looked up using JMdict and presented as exportable flashcards to the user. These flashcards can be imported into flashcard software such as 
@@ -59,10 +72,10 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col sm:flex-row justify-center">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://devpost.com/software/let-them-cook" target="_blank"><Image src={letThemCook} layout="fill" objectFit="cover" /></a>
+                    <a href="https://devpost.com/software/let-them-cook"><Image src={letThemCook} layout="fill" objectFit="cover" /></a>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                  <a href="https://devpost.com/software/let-them-cook" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Let Them Cook</h2></a>
+                  <a href="https://devpost.com/software/let-them-cook"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Let Them Cook</h2></a>
                     <p className="text-left text-base sm:text-lg text-slate-800">Let Them Cook is a web application built using React and Flask to make it easier for people to cook. Using a list of inputted ingredients,
                     recipes from a database will be searched through and selected to best match the user's list. Recipes were scraped from online cooking websites using a Python web scraper. The project won Best Beginner
                     Hack at Pride Hacks 2023.
@@ -71,10 +84,10 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col sm:flex-row justify-center">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://github.com/christopherlam888/the-ewc/" target="_blank"><Image src={ewcapp} layout="fill" objectFit="cover" /></a>
+                    <a href="https://github.com/christopherlam888/the-ewc/"><Image src={ewcapp} layout="fill" objectFit="cover" /></a>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                  <a href="https://github.com/christopherlam888/the-ewc/" target="_blank"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Everyday Watch Collector App</h2></a>
+                  <a href="https://github.com/christopherlam888/the-ewc/"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Everyday Watch Collector App</h2></a>
                     <p className="text-left text-base sm:text-lg text-slate-800">The Everyday Watch Collector app is a mobile app helping users learn more about horology and watch terminology, for which I built 
                     the front-end. The front-end was developed using XML in Android Studio, with a mockup created in <a href="https://www.figma.com/file/8ovOoiZKMXkb0tq0kwb9MN/UI?node-id=0%3A1" target="_blank"><span className="text-blue-700 hover:text-blue-500 font-medium">Figma</span></a>.
                     The app consists of a glossary page containing common watch terms and a videos page which directs users to videos reviewing watches and going over related horology topics.
