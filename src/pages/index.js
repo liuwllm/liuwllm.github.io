@@ -8,7 +8,7 @@ import ewcapp from "../../public/ewcapp.png"
 import HeaderComponent from "@/components/common/header";
 import cookEasy from "../../public/cookeasythumb.png";
 import letThemCook from "../../public/letthemcook.jpg";
-import etl from "../../public/TTTETL.png";
+import momentune from "../../public/momentune.jpg";
 
 export default function Home() {
   return (
@@ -45,19 +45,6 @@ export default function Home() {
             <div className="flex justify-start mx-5 p-3 sm:mx-20 sm:p-10">
               <div className="flex flex-col justify-center text-left">
                 <div id="projects"><h2 className="text-left text-5xl py-3 font-medium text-slate-800">Projects</h2></div>
-                <div className="flex flex-col sm:flex-row justify-center">
-                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
-                    <a href="https://github.com/liuwllm/twitch-to-twitter-etl"><Image src={etl} layout="fill" objectFit="cover" /></a>
-                  </div>
-                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                  <a href="https://github.com/liuwllm/twitch-to-twitter-etl"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Twitch to Twitter ETL</h2></a>
-                    <p className="text-left text-base sm:text-lg text-slate-800">Twitch to Twitter ETL is an ETL pipeline built using Node.js that collects Twitter data from top Twitch streamers and loads this data into a MongoDB database.
-                    This project makes use of the Twitch API to retrieve Twitch streamers with the highest CCV. A Twitter username is found for each streamer by scraping the streamer's About section on Twitch using Puppeteer. From these usernames,
-                    a Twitter API hosted on RapidAPI is called using concurrent asynchronous requests to retrieve tweet and Twitter profile data. This data is parsed and inserted into a MongoDB collection. This collection is then continuously aggregated
-                    to generate a 30-day view of each user.
-                    </p>
-                  </div>
-                </div>
                 <div className="flex flex-col sm:flex-row justify-center my-5">
                   <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
                     <a href="https://github.com/liuwllm/sunshelf"><Image src={sunshelf} layout="fill" objectFit="cover" /></a>
@@ -68,6 +55,17 @@ export default function Home() {
                     may upload text documents to the web application, which will then be scraped for Japanese kanji characters. After finding all characters, the application uses MeCab to segment the text
                     into individual Japanese words. The words are looked up using JMdict and presented as exportable flashcards to the user. These flashcards can be imported into flashcard software such as 
                     Anki to more easily facilitate learning kanji. </p>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-center">
+                  <div className="flex relative rounded-lg shrink-0 overflow-hidden w-56 h-44 sm:72 sm:60 md:w-96 md:h-80 hover:opacity-70 cursor-pointer">
+                    <a href="https://devpost.com/software/memory-lanez"><Image src={momentune} layout="fill" objectFit="cover" /></a>
+                  </div>
+                  <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
+                  <a href="https://devpost.com/software/memory-lanez"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Twitch to Twitter ETL</h2></a>
+                    <p className="text-left text-base sm:text-lg text-slate-800">Momentune is a web application built using Next.js with Typescript and Python. Momentune uses the OpenAI and Spotify API to analyze
+                    the emotion of a set of uploaded photos and generate a corresponding a playlist. Momentune features a mobile-first user interface built using Typescript.
+                    </p>
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-center">
