@@ -62,7 +62,7 @@ export default function Home() {
                     <a href="https://devpost.com/software/memory-lanez"><Image src={momentune} layout="fill" objectFit="cover" /></a>
                   </div>
                   <div className="flex flex-col justify-center py-5 px-0 sm:px-10">
-                  <a href="https://devpost.com/software/memory-lanez"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Twitch to Twitter ETL</h2></a>
+                  <a href="https://devpost.com/software/memory-lanez"><h2 className="text-left text-2xl sm:text-4xl font-medium text-blue-700 hover:text-blue-500 cursor-pointer mb-5">Momentune</h2></a>
                     <p className="text-left text-base sm:text-lg text-slate-800">Momentune is a web application built using Next.js with Typescript and Python. Momentune uses the OpenAI and Spotify API to analyze
                     the emotion of a set of uploaded photos and generate a corresponding a playlist. Momentune features a mobile-first user interface built using Typescript.
                     </p>
